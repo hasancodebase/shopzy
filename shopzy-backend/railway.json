@@ -1,0 +1,19 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install"
+  },
+  "deploy": {
+    "startCommand": "node server.js",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
+```
+
+Save the file. Then push to GitHub:
+```
+cd D:\MERN\ecommerce-frontend-batch23
+git add .
+git commit -m "add railway config"
+git push origin master
