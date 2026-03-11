@@ -9,11 +9,6 @@
     "restartPolicyType": "ON_FAILURE"
   }
 }
-```
 
-Save the file. Then push to GitHub:
-```
-cd D:\MERN\ecommerce-frontend-batch23
-git add .
-git commit -m "add railway config"
-git push origin master
+
+
