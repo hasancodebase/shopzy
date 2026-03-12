@@ -34,7 +34,8 @@ export default function Checkout() {
       };
 
       await axios.post(
-        "http://localhost:5000/api/orders",
+        "https://shopzy-production.up.railway.app/api/orders",
+        
         orderData,
         { headers: { Authorization: `Bearer ${token}` } }
       );

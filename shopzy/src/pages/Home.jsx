@@ -8,7 +8,8 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://shopzy-production.up.railway.app/api/products")
+    
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

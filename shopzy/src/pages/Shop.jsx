@@ -11,7 +11,8 @@ export default function Shop() {
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://shopzy-production.up.railway.app/api/products")
+    
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

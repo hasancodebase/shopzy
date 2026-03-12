@@ -13,7 +13,8 @@ export default function ProductDetail() {
   const [added, setAdded] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://shopzy-production.up.railway.app/api/products/${id}`)
+    
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
